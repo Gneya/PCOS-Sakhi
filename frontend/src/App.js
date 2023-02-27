@@ -1,9 +1,21 @@
-
-
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import ChatBot from './pages/ChatBot';
 function App() {
   return (
     <>
-      <p>React test</p>
+      <header>
+       {/* navbar */}
+      </header>
+      <main>
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/chatbot" element={<ChatBot />} />
+        </Routes>
+
+      </main>
     </>
   );
 }

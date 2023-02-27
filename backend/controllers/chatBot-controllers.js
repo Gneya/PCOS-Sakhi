@@ -47,7 +47,7 @@ export const getReply = async(req,res,next) => {
     convoArr.push(response.text);
     
     //returning array of converstion
-    return res.status(200).json({message: "reply by chatgpt",convoArr: convoArr});
+    return res.status(200).json({message: "reply by chatgpt",convoArr: convoArr, reply: response.text});
 }
 
 

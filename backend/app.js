@@ -12,9 +12,7 @@ const app = express();
 import chatRouter from "./routes/chat-routes.js";
 
 
-// app.use(cors);
-//I don't know why by uncommenting above line server doesn't sends any response :(
-
+app.use(cors());
 
 app.use(express.json());  //cause we are working with data in form of json object
 
