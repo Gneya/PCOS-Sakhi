@@ -4,17 +4,16 @@ const require = createRequire(import.meta.url);
 
 
 const express = require("express");
-const cors = require("cors");
+
+
 const dotenv = require("dotenv");
+const bodyParser = require("body-parser");
 dotenv.config();
 const app = express();
-
+app.set("view engine", "ejs");
+app.use(bodyParser.urlencoded({extended: true}));
 import chatRouter from "./routes/chat-routes.js";
 
-
-app.use(cors());
-
-app.use(express.json());  //cause we are working with data in form of json object
 
 app.use("/api/chatBot",chatRouter); 
 
