@@ -36,15 +36,16 @@ body{
 
 .container-main{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: row;
   flex: 1;
   align-items: center;
-
+  margin-top: 2.5rem;;
 }
 
 .container-main svg{
   width: 50%;
+
 }
 
 
