@@ -21,6 +21,7 @@ let convoArr = [];
 chatRouter.get("/", function(req,res,next){
     res.render("chat",{res: []});
 }); 
+
 chatRouter.post("/", async function(req,response,next){
     const { query } = req.body; //query = question from user
 

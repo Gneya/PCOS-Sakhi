@@ -24,7 +24,7 @@ app.use("/api/chatBot",chatRouter);
 
 app.use("/user",router);
 app.use("/post",journalRouter);
-
+app.use("/chatbox",chatRouter);
 mongoose.connect(process.env.MongoDB_Connection_Link, {
     useNewUrlParser: true,
 }).then(() => {
