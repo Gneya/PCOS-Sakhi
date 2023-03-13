@@ -10,8 +10,8 @@ body{
 
 
 .navbar {
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
     border: 0;
     border-radius: 0;
     margin-bottom: 0;
@@ -26,7 +26,9 @@ body{
   color: #fb6f92 !important;
   font-size: 2rem !important; 
 }
-
+.logo-img{
+  height: 100px;
+}
 .tab:hover{
   color: #ffff !important;
   background-color: #fb6f92;
