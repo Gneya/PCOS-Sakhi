@@ -12,10 +12,17 @@ dotenv.config();
 const app = express();
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended: true}));
+// app.use(cookieParser());
+app.use(express.static("public"));
+
 import chatRouter from "./routes/chat-routes.js";
 
 
 app.use("/api/chatBot",chatRouter); 
+
+app.get("/", function(req,res,next){
+    res.render('home_page');
+})
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, function(){
