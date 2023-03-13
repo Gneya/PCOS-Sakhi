@@ -35,12 +35,13 @@ body{
 .container-main{
   display: flex;
   justify-content: space-around;
+  justify-content: space-around;
   flex-direction: row;
   width: 100%;
   align-items: center;
   padding: 3rem;
   color: #DB3B61;
-  height: 100vh;
+  height: 100vh;  margin-top: 2.5rem;;
 }
 
 .container-main div{
